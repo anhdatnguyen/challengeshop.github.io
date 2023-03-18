@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./acsset/image/shotcut 00.34.57.png"
+    />
+    <link rel="stylesheet" href="./acsset/css/base.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./acsset/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+        <a href="index.html" class="logo">
+          <img src="./acsset/image/header-logo.png" alt="" />
+        </a>
+        <div class="menu">
+          <li>
+            <a href="#">Man</a>
+            <ul class="sub-menu">
+              <li><img src="./acsset/image/header-suit.jpeg" /><a href="./cartegory.html">suits</a></li>
+              <li>
+                <img src="./acsset/image/header-belts.webp" /><a href="./category-belt.html">Belts</a>
+              </li>
+              <li>
+                <img src="./acsset/image/header-shoes.webp" /><a href="./shose.html">Shoes</a>
+              </li>
+              <li>
+                <img src="./acsset/image/header-t-shirt.jpeg" /><a href="">Shirt</a>
+              </li>
+              <li>
+                <img src="./acsset/image/header-pants.webp" /><a href="">Pants</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Women</a>
+            <ul class="sub-menu">
+              <li>
+                <img src="./acsset/image/header-coat-women.jpeg" alt="" /><a href=""
+                  >Coat</a
+                >
+              </li>
+              <li>
+                <img src="./acsset/image/header-boots.jpeg" alt="" /><a href=""
+                  >Sneakers /Boots</a
+                >
+              </li>
+              <li>
+                <img src="./acsset/image/header-braze.jpeg" alt="" /><a href=""
+                  >Blazer</a
+                >
+              </li>
+              <li>
+                <img src="./acsset/image/header-cropt-top.jpeg" alt="" /><a href=""
+                  >Crop-top</a
+                >
+              </li>
+              <li>
+                <img src="./acsset/image/header-jeans-women.jpeg" alt="" /><a href=""
+                  >jeans</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Chirldren</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">More</a></li>
+        </div>
+        <div class="other">
+          <li>
+            <input type="search" />
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="header-camera">
+              <i class="fa-solid fa-camera"  onclick="showHideUsers()"></i>
+              <div class="header-camera-container hide">
+                <h3>Search images with Chalenge Shop</h3>
+                <div class="header-camera-wrap">
+                  <div class="header-camera_image">
+                    <img src="./acsset/image/camera-image.jpg" alt="">
+                    <p>Drag image here or upload <a href="#" style="color:#34b4eb;">file</a></p>
+                  </div>
+                  
+                  <div class="header-camera-search">
+                    <input type="text" placeholder="Paste image link....">
+                    <a href="#">Search</a>
+                  </div>
+                </div>
+                <i class="fa-solid fa-xmark" id="camera-remove"></i>
+              </div>
+          </li>
+          <li>
+            <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li class="header-cart">
+            <i class="fa-solid fa-cart-shopping" id="header-cart-shop">
+              </i>
+              <div class="header-cart-wrap">
+                <div class="cart_content">
+                  
+                </div>
+                  <div class="cart-total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0¥</div>
+                  </div>
+                  <a href="#" class="btn-primary header-cart-btn">Buy now</a>
+                  <i class="fa-solid fa-xmark" id="cart-remove"></i>
+                  </div>
+              </div>
+          </li>
+        </div>
+    </header>
+      <!-- ---------delivery-------- -->
+      <section class="delivery">
+        <div class="delivery-container">
+          <div class="delivery-wrap">
+            <div class="delivery-top">
+              <div class="delivery__cart cart-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="delivery__location cart-item">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="delivery__credit cart-item">
+                <i class="fa-solid fa-credit-card"></i>
+              </div>
+            </div>
+          </div>
+          <div class="delivery-container">
+            <div class="delivery-content">
+              <div class="delivery-left">
+                <h1>Delivery address</h1>
+                <div class="delivery-left-btn">
+                  <a class="btn-primary" href="./login.html">Log in</a>
+                  <a class="btn-primary" href="">Register</a>
+                </div>
+                <p>
+                  Login / Register an account to earn points and receive more
+                  incentives from Challenge shop.
+                </p>
+                <div class="delivery-left__address">
+                  <h2><i class="fa-solid fa-circle-check"></i> Address</h2>
+                  <div class="delivery-left__address-input">
+                    <div class="delivery-left__address-input-items">
+                      <input type="text" placeholder="Full Name" />
+                      <input type="text" placeholder="Phone number" />
+                    </div>
+                    <div class="delivery-left__address-input-items">
+                      <input type="text" placeholder="Province/City" />
+                      <input type="text" placeholder="District" />
+                    </div>
+                    <div class="delivery-left__address-input-items">
+                      <input type="text" placeholder="Wards" />
+                    </div>
+                    <div class="delivery-left__address-input-items">
+                      <input type="text" placeholder="Adress" />
+                    </div>
+                  </div>
+                </div>
+                <div class="delivery-left__pay">
+                  <h2>Payment methods</h2>
+                  <div class="delivery-left__pay-wrap">
+                    <p>
+                      All transactions are secure and encrypted. Credit card
+                      information will never be saved.
+                    </p>
+                    <div class="delivery-left__pay-item">
+                      <a href="">
+                        <input name="pay-method" type="radio" />
+                        <p>Pay by credit cart</p>
+                      </a>
+                      <img src="./acsset/image/master-card.png" alt="" />
+                      <img src="./acsset/image/visa.png" alt="" />
+                    </div>
+                    <div class="delivery-left__pay-item">
+                      <a href="">
+                        <input type="radio" name="pay-method" id="" />
+                        <p>Payment by ATM card</p>
+                      </a>
+                    </div>
+                    <div class="delivery-left__pay-item">
+                      <a href="">
+                        <input type="radio" name="pay-method" id="" />
+                        <p>Pay with Conbini</p>
+                      </a>
+                    </div>
+                    <div class="delivery-left__pay-item">
+                      <a href="">
+                        <input type="radio" name="pay-method" id="" />
+                        <p>Payment on delivery</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="delivery-left__showproduct-btn">
+                  <a class="btn-primary" href="">show products</a>
+                </div>
+              </div>
+              <div class="delivery-right">
+                <table>
+                  <tr>
+                    <th colspan="2">Order Summary</th>
+                  </tr>
+                  <tr>
+                    <td>Total amount of goods</td>
+                    <td>31.000¥</td>
+                  </tr>
+                  <tr>
+                    <td>Provisional</td>
+                    <td>31.000¥</td>
+                  </tr>
+                  <tr>
+                    <td>ransport fee</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Payments</td>
+                    <td>
+                      <p style="color: #000; font-weight: bold">31.000¥</p>
+                    </td>
+                  </tr>
+                </table>
+                <div class="delivery-button">
+                  <a href="">Continue Paying</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end delivery -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-top">
+            <h1>Challenge</h1>
+            <div class="footer-social">
+              <a href="">Shop</a>
+              <a href="">Latest News</a>
+              <a href="">Our Story</a>
+              <a href="">Contact Us</a>
+              <a href="">Returns & Exchanges</a>
+              <a href="">Careers</a>
+              <a href="">Sustainability</a>
+              <a href="">Insiders</a>
+              <a href="">Help Center</a>
+            </div>
+            <div class="footer-social_icon">
+              <a href="https://ja-jp.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.google.co.jp/mail"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://line.me/ja/"><i class="fa-brands fa-line"></i></a>
+            </div>
+          </div>
+          <div class="footer-center">
+            <div class="footer-center-wrap">
+              <i class="fa-solid fa-phone"></i>
+              <span>+810-6375-3768</span>
+            </div>
+            <div class="footer-center-wrap">
+              <i class="fa-solid fa-at"></i>
+              <span>info@Challenge.jp</span>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <ul>
+              <li>2022<span>Challenge</span></li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+    <script src="./acsset/main.js"></script>
+    <script src="./acsset/sliderbar.js"></script>
+  </body>
+</html>

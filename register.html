@@ -1,0 +1,198 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./acsset/image/shotcut 00.34.57.png"
+    />
+    <link rel="stylesheet" href="./acsset/css/base.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./acsset/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <style>
+
+  </style>
+  <body>
+
+    <header>
+      <a href="index.html" class="logo">
+        <img src="./acsset/image/header-logo.png" alt="" />
+      </a>
+      <div class="menu">
+        <li>
+          <a href="#">Man</a>
+          <ul class="sub-menu">
+            <li><img src="./acsset/image/header-suit.jpeg" /><a href="./cartegory.html">suits</a></li>
+            <li>
+              <img src="./acsset/image/header-belts.webp" /><a href="./category-belt.html">Belts</a>
+            </li>
+            <li>
+              <img src="./acsset/image/header-shoes.webp" /><a href="./shose.html">Shoes</a>
+            </li>
+            <li>
+              <img src="./acsset/image/header-t-shirt.jpeg" /><a href="">Shirt</a>
+            </li>
+            <li>
+              <img src="./acsset/image/header-pants.webp" /><a href="">Pants</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Women</a>
+          <ul class="sub-menu">
+            <li>
+              <img src="./acsset/image/header-coat-women.jpeg" alt="" /><a href="">Coat</a>
+            </li>
+            <li>
+              <img src="./acsset/image/header-boots.jpeg" alt="" /><a href="">Sneakers /Boots</a>
+            </li>
+            <li>
+              <img src="./acsset/image/header-braze.jpeg" alt="" /><a href="">Blazer</a>
+            </li>
+            <li>
+              <img src="./acsset/image/header-cropt-top.jpeg" alt="" /><a href="">Crop-top</a>
+            </li>
+            <li>
+              <img src="./acsset/image/header-jeans-women.jpeg" alt="" /><a href="">jeans</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Chirldren</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">More</a></li>
+      </div>
+      <div class="other">
+        <li>
+          <input type="search" />
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+        <li class="header-camera">
+          <i class="fa-solid fa-camera" onclick="showHideUsers()"></i>
+          <div class="header-camera-container hide">
+            <h3>Search images with Chalenge Shop</h3>
+            <div class="header-camera-wrap">
+              <div class="header-camera_image">
+                <img src="./acsset/image/camera-image.jpg" alt="">
+                <p>Drag image here or upload <a href="#" style="color:#34b4eb;">file</a></p>
+              </div>
+    
+              <div class="header-camera-search">
+                <input type="text" placeholder="Paste image link....">
+                <a href="#">Search</a>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark" id="camera-remove"></i>
+          </div>
+        </li>
+        <li>
+          <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+        </li>
+        <li class="header-cart">
+          <i class="fa-solid fa-cart-shopping" id="header-cart-shop">
+          </i>
+          <div class="header-cart-wrap">
+            <div class="cart_content">
+    
+            </div>
+            <div class="cart-total">
+              <div class="total-title">Total</div>
+              <div class="total-price">0¥</div>
+            </div>
+            <a href="#" class="btn-primary header-cart-btn">Buy now</a>
+            <i class="fa-solid fa-xmark" id="cart-remove"></i>
+          </div>
+      </div>
+      </li>
+      </div>
+    </header>
+      <section class="register-container">
+        <h1>New member registration</h1>
+        <form action="" class="register-form" method="post">
+          <div class="register-wrap">
+            <h2>Please enter the following information to proceed.</h2>
+            <div class="register_info">
+              <div class="form-field">
+                <input type="text"title="文字が間違える" pattern="[A-Z]*[a-z]*[ア-ン]*" id="fullname" name="fullname" placeholder=" " required/>
+                <label for="fullname">Fullname</label>
+              </div>
+              <div class="form-field">
+                <input type="text" name="username" id="name" placeholder=" " required/>
+                <label for="username">Username</label>
+              </div>
+              <div class="form-field">
+                <input type="text" id="email" name="email" placeholder=" " required/>
+                <label for="email">Mail address</label>
+              </div>
+              <div class="form-field">
+                <input type="tel" name="number" pattern="[0-9]{11}" id="number" placeholder=" " required/>
+                <label for="number">Number</label>
+              </div>
+              <div class="form-field">
+                <input type="password" placeholder=" " required name="password" id="password"/>
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <input type="submit" class="regiter-btn btn-primary" name="signup" value="Register">
+          </div>
+        </form>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-top">
+            <h1>Challenge</h1>
+            <div class="footer-social">
+              <a href="">Shop</a>
+              <a href="">Latest News</a>
+              <a href="">Our Story</a>
+              <a href="">Contact Us</a>
+              <a href="">Returns & Exchanges</a>
+              <a href="">Careers</a>
+              <a href="">Sustainability</a>
+              <a href="">Insiders</a>
+              <a href="">Help Center</a>
+            </div>
+            <div class="footer-social_icon">
+              <a href="https://ja-jp.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.google.co.jp/mail"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://line.me/ja/"><i class="fa-brands fa-line"></i></a>
+            </div>
+          </div>
+          <div class="footer-center">
+            <div class="footer-center-wrap">
+              <i class="fa-solid fa-phone"></i>
+              <span>+810-6375-3768</span>
+            </div>
+            <div class="footer-center-wrap">
+              <i class="fa-solid fa-at"></i>
+              <span>info@Challenge.jp</span>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <ul>
+              <li>2022<span>Challenge</span></li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <script src="./acsset/main.js"></script>
+    <script src="./acsset/sliderbar.js"></script>
+  </body>
+</html>
